@@ -1,4 +1,7 @@
 
+
+
+
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -121,4 +124,6 @@ exitBtn.onclick = function()
     modal.style.display = "none";
 }
 
+
 init();
+
