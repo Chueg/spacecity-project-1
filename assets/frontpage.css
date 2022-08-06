@@ -1,0 +1,25 @@
+.start-button {
+    height: 80px;
+}
+
+#quote {
+    font-size: 25px
+}
+
+#author {
+    text-align:end;
+    margin-top: 50px;
+}
+
+.goal-title {
+    font-size: 40px;
+}
+
+#budget-item {
+    margin: 3px 0 8px 0;
+}
+
+.slideshow-image {
+    border-radius: 25px;
+    box-shadow: 2px 4px 1.5em black;
+}
