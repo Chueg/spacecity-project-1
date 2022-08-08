@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Budget Home Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/frontpage.css"/>
   </head>
 
   <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -79,24 +80,23 @@
               <p class="subtitle">Top tile</p>
             </article>
             <article class="tile is-child notification is-warning">
-              <p class="title">...tiles</p>
-              <p class="subtitle">Bottom tile</p>
+              <p class="subtitle" id="quote"></p>
+              <p class="title" id="author"></p>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child notification is-info">
-              <p class="title">Middle tile</p>
-              <p class="subtitle">With an image</p>
-              <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/640x480.png">
+              <p class="title">We help you budget...</p>
+              <p class="subtitle" id="budget-item"></p>
+              <figure class="image is-3by2 slideshow" aria-role="img" aria-label="carousel">
+                <img id="slideshow-image" class="slideshow-image" src="">
               </figure>
             </article>
           </div>
         </div>
         <div class="tile is-parent">
-          <article class="tile is-child notification is-danger">
-            <p class="title">Wide tile</p>
-            <p class="subtitle">Aligned with the right tile</p>
+          <article class="start-button tile is-child notification button is-large is-link" id="start-button">
+            <p class="title">Click to get started...</p>
             <div class="content">
               <!-- Content -->
             </div>
@@ -104,10 +104,10 @@
         </div>
       </div>
       <div class="tile is-parent">
-        <article class="tile is-child notification is-success">
+        <article class="tile is-child notification is-success about-info">
           <div class="content">
-            <p class="title">Tall tile</p>
-            <p class="subtitle">With even more content</p>
+            <p class="title goal-title">Our goal</p>
+            <p class="subtitle goal-desc">We made this budget tracker because we believe in the importance of keeping track of one's finances.</p>
             <div class="content">
               <!-- Content -->
             </div>
@@ -129,41 +129,7 @@
         </div>
       </div>
     </section>
-    
 
-  <div class="columns is-variable is-0-desktop-only">
-    <div class="column">
-        <div class="has-background-link-dark has-text-white has-text-centered">1</div>
-    </div>
-    <div class="column">
-        <div class="has-background-info-dark has-text-white has-text-centered">2</div>
-    </div>
-    <div class="column">
-        <div class="has-background-link-dark has-text-white has-text-centered">3</div>
-    </div>
-    <div class="column">
-        <div class="has-background-info-dark has-text-white has-text-centered">4</div>
-    </div>
-    <div class="column">
-        <div class="has-background-link-dark has-text-white has-text-centered">5</div>
-    </div>
-    <div class="column">
-        <div class="has-background-info-dark has-text-white has-text-centered">6</div>
-    </div>
-</div>
-
-
-
-  <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
-    <ul>
-      <li><a href="#">Pay Check</a></li>
-      <li><a href="#">Utilities</a></li>
-      <li><a href="#">Car</a></li>
-      <li><a href="#">Groceries</a></li>
-      <li class="is-active"><a href="#" aria-current="page">Total</a></li>
-    </ul>
-  </nav>
-
-
+  <script src="./assets/frontpage.js"></script>
   </body>
 </html>
