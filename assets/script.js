@@ -17,6 +17,7 @@ var entryAmount = document.getElementById("expenseCost");
 var bigList = [];
 var item = ['',0];
 var itemComparison = ["",0];
+var newList = document.getElementById("#bigLunch");
 
 var costComparison = '';
 // Get the <span> element that closes the modal
@@ -82,6 +83,18 @@ function init()
     console.log(bigList);
   }
 
+function makelist()
+  {
+    for(var i = 0; i<5; i++)
+  {
+  var li = document.createElement("li");
+  var tempVar = bigList[i];
+    li.textContent = tempVar[0] + " " + tempVar[1];
+    console.log(li);
+      newList.appendChild(li);
+  }
+
+}
 
 
 
@@ -117,13 +130,20 @@ entryBtn.onclick = function()
     addToList();
     storeList();
 
+
+
 }
 
 exitBtn.onclick = function()
 {
     modal.style.display = "none";
+    makelist();
 }
 
 
+
+
+
 init();
+
 
