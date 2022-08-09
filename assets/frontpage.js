@@ -21,15 +21,23 @@ var items = [
 ]
 
 var startBtn = document.querySelector('#start-button');
-var redirectInput = "inputPage.html"
+var budgetBtn = document.querySelector('#budget-button');
+var redirectInput = "inputPage.html";
+var redirectBudget = "indexChart.html";
 
 
 // Leads to the input page
 function getStarted () {
-    window.location.replace(redirectInput)
+    window.location = redirectInput;
 };
 
 startBtn.addEventListener("click", getStarted);
+
+function budgetView () {
+    window.location = redirectBudget;
+}
+
+budgetBtn.addEventListener("click", budgetView);
 
 // Randomly generates a quote on the front page on load
 fetch("https://type.fit/api/quotes")
@@ -41,10 +49,10 @@ fetch("https://type.fit/api/quotes")
     function generateRandom(maxLimit = 1643) {
         let randQuote = Math.floor(Math.random() * maxLimit);
         if (data[randQuote].author === null) {
-        quoteEl.textContent = data[randQuote].text
-        authorEl.textContent = "-Anonymous"
+        quoteEl.textContent = '"' + data[randQuote].text + '"';
+        authorEl.textContent = "-Anonymous";
         } else {
-        quoteEl.textContent = data[randQuote].text
+        quoteEl.textContent = '"' + data[randQuote].text + '"';
         authorEl.textContent = "-" + data[randQuote].author
         }
     }

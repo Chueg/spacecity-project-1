@@ -15,6 +15,11 @@
     font-size: 40px;
 }
 
+.goal-desc{
+    font-size: 25px;
+    padding-top: 25px;
+}
+
 #budget-item {
     margin: 3px 0 8px 0;
 }
@@ -22,4 +27,22 @@
 .slideshow-image {
     border-radius: 25px;
     box-shadow: 2px 4px 1.5em black;
+}
+
+.test-image {
+    float: right;
+}
+
+.features-title {
+    padding-top: 60px;
+    font-size: 40px;
+}
+
+.features-desc {
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+.testimonial-desc {
+    padding-top: 10px;
 }
