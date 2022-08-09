@@ -1,6 +1,8 @@
 'use strict';
 //the colors of the doughtnut labels
-var labelColors = ['#f08700', '#f49f0a', '#efca08', '#00a6a6', '#bbdef0','#7fb7be', '#357266', '#dacc3e', '#bc2c1a', '#7d1538'];
+var labelColors = ['#f08700', '#f49f0a', '#efca08', '#00a6a6', '#bbdef0','#7fb7be', '#357266', '#dacc3e', '#bc2c1a', '#7d1538'
+,'#000000','#C0C0C0','#808080','#800000','#008000','#00FFFF','#008080','#FFFF00','#800080','#f5f5dc',
+'#5f9ea0','#deb887','#a52a2a','#ffebcd','#dc143c','#bdb76b','#ff8c00','#8fbc8f','#b22222','#1e90ff'];
 //variables made from our localstorage and was pushed into two arrays(Expense & Cost) using a forloop
 var expenseCosts = JSON.parse(localStorage.getItem("list"))
 var expenseLabel = []
