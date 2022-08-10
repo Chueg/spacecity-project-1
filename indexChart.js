@@ -5,6 +5,7 @@ var labelColors = ['#f08700', '#f49f0a', '#efca08', '#00a6a6', '#bbdef0','#7fb7b
 var expenseCosts = JSON.parse(localStorage.getItem("list"))
 var expenseLabel = []
 var expenseData = []
+var newList2 = document.getElementById("#bigLunch2");
 for(var i = 0; i <expenseCosts.length; i++)
 {
     var costs = expenseCosts[i];
@@ -19,6 +20,23 @@ var total = function(Chart) {
 	initialValue)
 	return `Total: ${sum}`;
 };
+
+function makelist2()
+  {
+    for(var i = 0; i<5; i++)
+  {
+  var li = document.createElement("li");
+  var tempVar = expenseCosts[i];
+    li.textContent = tempVar[0] + " " + tempVar[1];
+    console.log(li);
+      newList2.appendChild(li);
+  }
+
+}
+
+
+
+
 // Doughnut with one line of text in the center
 var ctx = document.getElementById('chart').getContext('2d');
 var Chart = new Chart(ctx, {
@@ -64,3 +82,5 @@ var Chart = new Chart(ctx, {
 		}
 	}
 });
+
+makelist2();

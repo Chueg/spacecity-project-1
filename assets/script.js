@@ -85,7 +85,8 @@ function init()
 
 function makelist()
   {
-    for(var i = 0; i<5; i++)
+    newList.textContent="";
+    for(var i = 0; i<bigList.length; i++)
   {
   var li = document.createElement("li");
   var tempVar = bigList[i];
