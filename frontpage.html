@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Budget Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/frontpage.css"/>
+  </head>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+  
+        <a class="navbar-item">
+          Documentation
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary" id="budget-button">
+              <strong>View your budget</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <body>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-primary">
+              <p class="title testimonial-title">Testimonial</p>
+              <p class="subtitle testimonial-desc">"Managing my finances has never been easier"</p>
+              <figure class="image is-128x128 test-image">
+                <img class="is-rounded" src="./assets/images/daniel-testimonial.jpg">
+              </figure>
+            </article>
+            <article class="tile is-child notification is-warning">
+              <p class="subtitle" id="quote"></p>
+              <p class="title" id="author"></p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-info">
+              <p class="title">We help you budget...</p>
+              <p class="subtitle" id="budget-item"></p>
+              <figure class="image is-3by2 slideshow" aria-role="img" aria-label="carousel">
+                <img id="slideshow-image" class="slideshow-image" src="">
+              </figure>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="start-button tile is-child notification button is-large is-link" id="start-button">
+            <p class="title">Click to get started...</p>
+            <div class="content">
+              <!-- Content -->
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-success about-info">
+          <div class="content">
+            <p class="title goal-title">Our goal</p>
+            <p class="subtitle goal-desc">We made this budget tracker because we believe in the importance of keeping track of one's finances.</p>
+            <p class="title features-title">Our Features</p>
+            <p class="subtitle features-desc">We offer an easy to use self run budgetting app where you can input your monthly payments and view the total output into a chart. This lets you see where your money is going, as well as where it could be going.</p>
+            <div class="content">
+              <!-- Content -->
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    
+    
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Getting your finances <b>Together</b>
+          </h1>
+          <h2 class="subtitle">
+            Budgeting made easy
+          </h2>
+        </div>
+      </div>
+    </section>
+
+  <script src="./assets/frontpage.js"></script>
+  </body>
+</html>
