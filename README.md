@@ -41,3 +41,7 @@ PRESENT ITSELF IN
 - DONUT GRAPH
 - COLOR CODED EXPENCE
 - TOTAL SPENT
+
+## The Application's URL + Git Hub's Repository
+https://chueg.github.io/spacecity-project-1/
+https://github.com/Chueg/spacecity-project-1
